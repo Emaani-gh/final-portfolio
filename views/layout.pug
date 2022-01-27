@@ -1,0 +1,43 @@
+doctype html
+html
+  head
+    title= title
+    link(rel='stylesheet', href='/stylesheets/style.css')
+    link(rel='preconnect' href='https://fonts.googleapis.com')
+    link(rel='preconnect' href='https://fonts.gstatic.com' crossorigin='')
+    link(href='https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&family=Roboto:wght@100;300;400&display=swap' rel='stylesheet')
+    script(src='https://kit.fontawesome.com/6341d15c4c.js' crossorigin='anonymous')
+
+   
+  body
+    .main-container
+      .sidebar
+        .sidebar-info-container
+          .profile-pic-container
+            img(src='../images/dp2.jpeg')
+          .profile-info-box
+            h1 Abdul Salam Seidu
+            p Full Stack Student
+          .sidebar-menu
+            ul
+              li
+                a(href='/about') about
+              li
+                a(href='resume') resume
+              li
+                a(href='portfolio') portfolio
+          .social-media
+            a(href='')
+              i.fab.fa-github 
+            a(href='')
+              i.fa.fa-instagram
+            a(href='')
+              i.fa.fa-linkedin
+      .wrapper
+        header
+          .logo-info
+            a(href='/about') Seidu
+          .hamburger-menu#hamburger
+            i.fas.fa-bars
+        block content
+    script(src='../javascripts/events.js')
